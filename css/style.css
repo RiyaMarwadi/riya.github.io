@@ -1,0 +1,58 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #F2D7B6;
+    font-family: 'Courier New', Courier, monospace;
+    color: #40261D;
+    line-height: 1.5;
+    margin: 3rem auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+   color: #80A69B;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a{
+    color: #80A69B;
+    text-decoration: none; 
+    margin: 0 0 0 2rem;
+}
+
+a h1:hover{
+   color:#D94F30;
+}
+
+a h1:visited{
+    color:#D94F30;
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main{
+
+}
+
+footer{
+    width: 55rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
