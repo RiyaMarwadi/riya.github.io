@@ -1,19 +1,26 @@
 html{
-    font-size: 16px;
+    font-size: 16px;3
 }
 
 body{
-    background-color: #F2D7B6;
+    background-color: #40261d9a;
     font-family: 'Courier New', Courier, monospace;
     color: #40261D;
     line-height: 1.5;
-    margin: 3rem auto;
+    max-width: 100%; 
+    margin: auto;
 }
 
 header{
+    background-color: rgba(64, 38, 29, 0.75);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header img {
+    padding: 1em; 
 }
 
 h1{
@@ -46,13 +53,64 @@ nav{
 }
 
 main{
+    max-width: 70.2rem; 
+    margin: auto;
+}
+
+section {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
 
 }
 
 footer{
-    width: 55rem;
+    width: 90%;
+    text-align: center;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+footer a {
+    text-align: center;
+}
+
+input, textarea{
+        width: 100%;
+}
+
+textarea{
+    height: 320px;
+}
+
+button{
+        background-color: #80A69B;
+        border: none;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 8px 16px 8px 16px;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid black;
+}
+
+.work_bg{
+    background-color: #40261d9a;
+}
+
+#index_bg {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#index_footer{
+    text-align: center;
+    margin: auto; 
+    position: absolute;
+    bottom: 0;
 }
