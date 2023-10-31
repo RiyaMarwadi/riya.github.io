@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
+@font-face{
+    font-family:'PatrickHandSC';
+    src: url(PatrickHandSC-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'phosphate';
+    src: url(Phosphate.ttc);
+}
+
 html{
-    font-size: 16px;3
+    font-size: 16px;
 }
 
 body{
     background-color: #40261d9a;
-    font-family: 'Courier New', Courier, monospace;
+  font-family:'PatrickHandSC';
     color: #40261D;
     line-height: 1.5;
     max-width: 100%; 
@@ -32,10 +42,12 @@ h1{
     font-weight: 400;
 }
 
+
 a{
     color: #80A69B;
     text-decoration: none; 
     margin: 0 0 0 2rem;
+    font-family: 'phosphate';
 }
 
 a h1:hover{
@@ -45,8 +57,6 @@ a h1:hover{
 a h1:visited{
     color:#D94F30;
 }
-
-
 
 nav{
     display: flex;
@@ -60,6 +70,7 @@ main{
 }
 
 section {
+    margin: 9.15rem auto;
     display: grid; 
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 1.5rem;
@@ -100,12 +111,18 @@ input:focus, textarea:focus{
     border: 2px solid black;
 }
 
-.work_bg{
+#work_bg{
     background-color: #40261d9a;
 }
 
 #index_bg {
     background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about_bg{
+    background-image: url("../img/about_bgcopy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -118,5 +135,97 @@ input:focus, textarea:focus{
 }
 
 p{
-    color: #D94F30;
+    color: #40261D;
+}
+
+#tagline{
+    grid-column: 2/12;
+    text-align: center;
+    font-family:'pathway gothic one';
+    font-size: 2rem;
+}
+
+#project_1{
+    grid-column: 1/5;
+}
+
+#description_1{
+    grid-column: 8/13;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#project_2{
+    grid-column: 9/12;
+}
+
+#description_2{
+    grid-column: 1/8;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#project_3{
+    grid-column: 1/2;
+}
+
+#description_3{
+    grid-column: 4/13;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#project_4{
+    grid-column: 10/13; 
+}
+
+#description_4{
+    grid-column: 1/9;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#project_5{
+    grid-column: 1/2;
+}
+
+#description_5{
+    grid-column: 3/12;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+
+#byline{
+    grid-column: 2/12;
+    text-align: center;
+}
+
+#contact{
+    grid-column: 2/12;
+}
+
+#about_me{
+    grid-column: 1/2;
+}
+
+#bio{
+    grid-column: 3/12;
+    text-align: center;
+    font-family: 'pathway gothic one';
+    font-weight: 700;
+}
+
+.project_1{
+    background-image: url("/img/architecture.jpg");
+    background-position: 0px 0px;
+    margin: auto;
+    margin-top: 10%;
+    height: 271px;
+    width: 350px;
+}
+
+.project_1:hover {
+    background-image: url("/img/architecture.jpg");
+    background-position: 0px -271px;
 }
