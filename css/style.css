@@ -15,9 +15,9 @@ html{
 }
 
 body{
-    background-color: #40261d9a;
-  font-family:'PatrickHandSC';
-    color: #40261D;
+    background-color: rgba(0, 0, 0, 0.888);
+    font-family:'PatrickHandSC';
+    color:#D94F30;
     line-height: 1.5;
     max-width: 100%; 
     margin: auto;
@@ -25,6 +25,13 @@ body{
 
 header{
     background-color: rgba(64, 38, 29, 0.598);
+    width: 103%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photos{
     width: 100%;
     display: flex;
     align-items: center;
@@ -42,6 +49,10 @@ h1{
     font-weight: 400;
 }
 
+h2{
+    font-family: 'patrickhandsc';
+}
+
 
 a{
     color: #80A69B;
@@ -57,6 +68,17 @@ a h1:hover{
 a h1:visited{
     color:#D94F30;
 }
+
+a h2{
+    color:#D94F30; 
+    font-family: 'phosphate';
+}
+
+#headline{
+    color:#80A69B;
+    font-family: 'patrickhandsc';
+}
+
 
 nav{
     display: flex;
@@ -100,7 +122,7 @@ textarea{
 }
 
 button{
-        background-color: #80A69B;
+        background-color:beige;
         border: none;
         font-size: 20px;
         font-family: 'Courier New', Courier, monospace;
@@ -112,7 +134,9 @@ input:focus, textarea:focus{
 }
 
 #work_bg{
-    background-color: #40261d9a;
+    background-image: url("../img");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #index_bg {
@@ -134,8 +158,9 @@ input:focus, textarea:focus{
     bottom: 0;
 }
 
-p{
-    color: #40261D;
+ section p{
+    color:#F2D7B6;
+
 }
 
 #tagline{
@@ -150,17 +175,17 @@ p{
 }
 
 #description_1{
-    grid-column: 8/13;
+    grid-column: 6/12;
     text-align: left;
     font-size: 1.5rem;
 }
 
 #project_2{
-    grid-column: 9/12;
+    grid-column: 9/13;
 }
 
 #description_2{
-    grid-column: 1/8;
+    grid-column: 1/9;
     text-align: left;
     font-size: 1.5rem;
 }
@@ -197,8 +222,11 @@ p{
 
 
 #byline{
+    color: beige;
     grid-column: 2/12;
     text-align: center;
+    font-family: 'patrickhandsc';
+    font-weight: 700;
 }
 
 #contact{
@@ -214,18 +242,117 @@ p{
     text-align: center;
     font-family: 'pathway gothic one';
     font-weight: 700;
+    color: #40261D;
 }
-
-.project_1{
-    background-image: url("/img/architecture.jpg");
+.selected {
+    color: #D94F30;
+}
+#project_1{
+    background-image: url("../img/fruitvendor.jpg");
     background-position: 0px 0px;
-    margin: auto;
-    margin-top: 10%;
-    height: 271px;
-    width: 350px;
+    height: 884px;
+    width: 500px;
 }
 
-.project_1:hover {
-    background-image: url("/img/architecture.jpg");
-    background-position: 0px -271px;
+#project_1:hover {
+    background-image: url("../img/fruitvendor.jpg");
+    background-position: 0px -884px;
 }
+
+#project_2{
+    background-image: url("../img/giraffe1.jpg");
+    background-position: 0px 0px;
+    height: 750px;
+    width: 500px;
+}
+
+#project_2:hover {
+    background-image: url("../img/giraffe1.jpg");
+    background-position: 0px -750px;
+}
+
+#project_3{
+    background-image: url("../img/rox.jpg");
+    background-position: 0px 0px;
+    height: 825px;
+    width: 550px;
+}
+
+#project_3:hover {
+    background-image: url("../img/rox.jpg");
+    background-position: 0px -825px;
+}
+
+#project_4{
+    background-image: url("../img/verma.jpg");
+    background-position: 0px 0px;
+    height: 733px;
+    width: 550px;
+}
+
+#project_4:hover {
+    background-image: url("../img/verma.jpg");
+    background-position: 0px -733px;
+}
+
+#project_5{
+    background-image: url("../img/landscape1.jpg");
+    background-position: 0px 0px;
+    height: 825px;
+    width: 550px;
+}
+
+#project_5:hover {
+    background-image: url("../img/landscape1.jpg");
+    background-position: 0px -825px;
+}
+
+#contact_bg{
+    background-image: url("../img/contact.bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label{
+    color: beige;
+}
+
+#photo_1{
+    grid-column: 1/2;
+}
+
+#photo_2{
+    grid-column: 4/6;
+}
+    
+#photo_3{
+    grid-column: 1/2;
+}
+
+#photo_4{
+    grid-column: 4/6;
+}
+    
+#photo_5{
+    grid-column: 1/2;
+}
+
+#photo_6{
+    grid-column: 4/6;
+}
+
+#photo_7{
+    grid-column: 1/2;
+}
+
+#photo_8{
+    grid-column: 4/6;
+}
+
+#info{
+    color: #40261D;
+}
+    
+
+
+

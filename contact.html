@@ -12,18 +12,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body id="contact_bg">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
      <header>
-        <img src="img/logo.png" alt="Riya Marwadi Logo">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Riya Marwadi Logo">
+        </a>
 
         <nav>
-            <a href="index.html">
-                <h1>home</h1>
-            </a>
             <a href="work.html">
                 <h1>work</h1>
             </a>
@@ -31,10 +30,10 @@
                 <h1>about</h1>
             </a>
             <a href="#">
-                <h1>contact</h1>
+                <h1 class="selected">contact</h1>
             </a>
-            <a href="otherworks.html">
-                <h1>other works</h1>
+            <a href="photogallery.html">
+                <h1>photo gallery</h1>
             </a>
 
         </nav>
@@ -43,14 +42,19 @@
      <main class="contact">
         <section class="form">
                 <div id="byline">
-                     <h1>I'd love to work with you. Please reach out to me through the contact form below</h1>
+                     <h2> Let's create something together! 
+                        Reach out to me through the form below</h2>
                 </div>
 
             <div id="contact">
                 <form
                 action="https://formspree.io/f/xoqorgnp"
-                method="POST"
-              >
+                method="POST">
+
+                <label>
+                    Your Name:
+                    <input type="Name" name="Name">
+                  </label>
                 <label>
                   Your email:
                   <input type="email" name="email">
@@ -67,14 +71,14 @@
      </main>
 
      <footer>
-        <a href="Instagram.com" target="_blank">
-            <h2>Instagram</h2>
+        <a href="https://www.instagram.com/_sundayseries/" target="_blank">
+            <h1>Instagram</h1>
         </a>
-        <a href="LinkedIn.com" target="_blank">
-             <h2>LinkedIn</h2>
+        <a href="https://www.linkedin.com/in/riya-m-15b825133/" target="_blank">
+             <h1>LinkedIn</h1>
          </a>   
-         <a href="mailto:riyamarwadi@gmail.com" target="_blank">
-             <h2>Email</h2>
+         <a href="contact.html" target="_blank">
+             <h1>Email</h1>
          </a>    
      </footer>
     </body>
